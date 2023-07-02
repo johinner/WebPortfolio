@@ -35,8 +35,6 @@ const Title = styled.h2`
   @media (max-width: 40em){
     width: 90%;
   }
-
-  
 `;
 const SubTitle = styled.h3`
   font-size: ${(props) => props.theme.fontlg};
@@ -71,7 +69,6 @@ const ButtonContainer = styled.div`
       margin: 0 auto;
     }
   }
-
 `
 const TypeWriterText = () => {
   return (

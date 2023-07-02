@@ -9,6 +9,7 @@ background-color: ${props => props.theme.text};
 color: ${props => props.theme.body};
 outline: none;
 border: none;
+z-index: 10;
 
 font-size: ${props => props.theme.fontsm};
 padding: 0.9rem 2.3rem;

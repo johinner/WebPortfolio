@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import Logo from "./Logo";
+import ToggleMoonSun from "./ToggleMoonSun";
 
 const Section = styled.section`
   width: 100vw;
@@ -167,7 +168,7 @@ const Navigation = () => {
           </MenuItem>
         </Menu>
         <div className="desktop">
-          <Button text="Connect Wallet" link="https://google.com" />
+          <ToggleMoonSun/>
         </div>
       </NavBar>
     </Section>

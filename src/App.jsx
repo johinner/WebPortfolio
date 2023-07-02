@@ -1,7 +1,8 @@
 
+import { UserContext } from "./context/UserContext";
+import { useContext } from "react";
 
 import GlobalStyles from "./styles/GlobalStyles";
-import { light, dark } from "./styles/Themes";
 import { ThemeProvider } from "styled-components";
 
 import Navigation from "./components/Navigation";
@@ -14,12 +15,14 @@ import Showcase from "./components/sections/Showcase";
 import Faq from "./components/sections/Faq";
 import ScrollToTop from "./components/ScrollToTop";
 
+
 function App() {
+  const {theme} = useContext(UserContext)
   return (
-    <main>
-      <GlobalStyles />
-      <ThemeProvider theme={light}>
-        {/* <Suspense fallback={<Loading />}> */}
+      <main>
+        <GlobalStyles />
+        <ThemeProvider theme={theme}>
+          {/* <Suspense fallback={<Loading />}> */}
           <Navigation />
           <Home />
           <About />
@@ -29,10 +32,10 @@ function App() {
           <Faq />
           <Footer />
           {/* <ScrollToTop scrollPosition={y}/> */}
-          <ScrollToTop />{" "}
-        {/* </Suspense> */}
-      </ThemeProvider>
-    </main>
+          <ScrollToTop /> {/* </Suspense> */}
+        </ThemeProvider>
+      </main>
+    
   );
 }
 

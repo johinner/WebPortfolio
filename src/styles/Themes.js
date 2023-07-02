@@ -2,7 +2,7 @@
 
 export const light = {
     
-    body:"#fff",
+    body:"#f1f8fc",
     text:"#202020", // black shade
     bodyRgba : "255, 255, 255",
     textRgba:"32,32,32",
@@ -26,7 +26,7 @@ export const light = {
 
 export const dark = {
     
-    body:"#202020",
+    body:"#192e3a",
     text: "#fff", // black shade
     bodyRgba :"32,32,32" ,
     textRgba: "255, 255, 255",
